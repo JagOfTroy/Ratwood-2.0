@@ -479,22 +479,6 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/bath)
-"ajs" = (
-/obj/structure/closet/crate/chest/crate,
-/obj/structure/fluff/railing/wood/west{
-	pixel_x = -5
-	},
-/obj/structure/fluff/railing/wood/north{
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -8
-	},
-/obj/item/rogueweapon/mace/wsword,
-/obj/item/rogueweapon/mace/wsword,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/town/roofs)
 "ajt" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 8;
@@ -2686,17 +2670,6 @@
 "aSH" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
 /area/rogue/under/cavewet)
-"aST" = (
-/obj/structure/fluff/customsign{
-	icon_state = "signwrote";
-	name = "EVIL ASS MOUNTAIN ZONE - UNDER CONSTRUCTION!!";
-	pixel_y = 3
-	},
-/obj/merge_conflict_marker{
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/transparent/openspace,
-/area/rogue/indoors/shelter/mountains)
 "aSV" = (
 /obj/structure/flora/roguegrass/water,
 /obj/effect/wisp/prestidigitation{
@@ -5870,6 +5843,18 @@
 /obj/item/ash,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/magician)
+"bSW" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/structure/fluff/railing/wood/west{
+	pixel_x = -5
+	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -8
+	},
+/obj/item/rogueweapon/mace/wsword,
+/obj/item/rogueweapon/mace/wsword,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/town/roofs)
 "bTl" = (
 /obj/structure/fluff/wallclock,
 /obj/structure/chair/bench/couchablack,
@@ -10580,6 +10565,12 @@
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/church)
+"dqH" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -8
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/town/roofs)
 "dqL" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
@@ -24499,7 +24490,7 @@
 "hII" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue/indoors/town/church)
+/area/rogue/indoors/town/church/basement)
 "hIK" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -28014,7 +28005,7 @@
 	dir = 8;
 	locked = 1;
 	lockid = "church";
-	name = "Church Cells"
+	name = "Pestras Quarter"
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church/basement)
@@ -46177,7 +46168,7 @@
 	},
 /obj/structure/broadcast_horn/paid{
 	broadcaster_tag = "Public Broadcaster";
-	dir = 8;
+	dir = 4;
 	pixel_y = 8
 	},
 /turf/open/floor/rogue/tile/brownbrick,
@@ -50379,6 +50370,15 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet/wizarddungeon)
+"qeO" = (
+/obj/structure/lever/wall{
+	dir = 1;
+	name = "Escape Route";
+	pixel_x = -12;
+	redstone_id = "gate_churchcell"
+	},
+/turf/open/floor/rogue/blocks/flipped,
+/area/rogue/indoors/town/church/basement)
 "qeS" = (
 /obj/structure/flora/roguegrass/bush,
 /obj/structure/fluff/railing/border{
@@ -53664,6 +53664,12 @@
 /obj/structure/flora/roguetree/pine,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/rtfield/rockhill)
+"rpm" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "rpo" = (
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/basement/keep)
@@ -56834,6 +56840,10 @@
 /obj/structure/fluff/walldeco/wantedposter,
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/beach/harbor)
+"spg" = (
+/obj/structure/fluff/railing/wood/north,
+/turf/open/floor/rogue/rooftop/green/corner1,
+/area/rogue/outdoors/town/roofs)
 "spl" = (
 /obj/structure/table/wood{
 	icon_state = "map6"
@@ -60392,6 +60402,7 @@
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
 /obj/structure/closet/crate/roguecloset,
+/obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "twI" = (
@@ -61892,7 +61903,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/church)
+/area/rogue/indoors/town/church/basement)
 "tWR" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -63264,7 +63275,6 @@
 "uvL" = (
 /obj/structure/table/vtable,
 /obj/structure/broadcast_horn/loudmouth{
-	dir = 8;
 	pixel_y = 16
 	},
 /turf/open/floor/carpet/royalblack,
@@ -63369,9 +63379,6 @@
 	pixel_y = 25
 	},
 /obj/structure/bookcase/random,
-/obj/merge_conflict_marker{
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/fluff/railing/wood{
 	dir = 8;
 	pixel_x = -8
@@ -73558,6 +73565,13 @@
 /obj/structure/fluff/walldeco/wantedposter,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/tavern)
+"xRw" = (
+/obj/structure/fluff/railing/wood/north,
+/obj/structure/fluff/railing/wood/west,
+/turf/open/floor/rogue/rooftop/green/corner1{
+	dir = 5
+	},
+/area/rogue/outdoors/town/roofs)
 "xRx" = (
 /obj/structure/table/wood/poor,
 /obj/item/candle/yellow,
@@ -74752,7 +74766,6 @@
 "ykG" = (
 /obj/structure/table/vtable/v2,
 /obj/structure/broadcast_horn/loudmouth/guest{
-	dir = 4;
 	pixel_y = 18
 	},
 /turf/open/floor/carpet/royalblack,
@@ -280978,13 +280991,13 @@ euP
 euP
 euP
 euP
-ihO
-ihO
+hXp
+hXp
 hII
-noB
-ooi
+dHE
+bOE
 tWN
-ihO
+hXp
 bpD
 bpD
 bpD
@@ -282717,7 +282730,7 @@ waT
 bOE
 hFt
 bwp
-bwp
+qeO
 hXp
 eFm
 eFm
@@ -372113,7 +372126,7 @@ nNJ
 eBW
 tTq
 eCi
-eBW
+rpm
 sIt
 qEF
 lvE
@@ -553739,7 +553752,7 @@ elI
 elI
 tAB
 tAB
-aST
+rbn
 rbn
 rbn
 rbn
@@ -592432,9 +592445,9 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
-fjX
-gJG
+xRw
+xfs
+bSW
 jqs
 fjX
 col
@@ -592864,9 +592877,9 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
-fjX
+ewi
 gJG
+dqH
 jqs
 fjX
 col
@@ -593296,9 +593309,9 @@ fZJ
 fZJ
 fZJ
 fZJ
-fZJ
-fjX
-ajs
+ewi
+gJG
+dqH
 jqs
 fjX
 col
@@ -593726,10 +593739,10 @@ gJG
 fjX
 fZJ
 fZJ
-fZJ
 cMk
 tRe
-xfs
+spg
+gJG
 gJG
 eEm
 iLN
@@ -594158,8 +594171,8 @@ gJG
 fjX
 fZJ
 fZJ
-fZJ
 ewi
+gJG
 gJG
 gJG
 gJG
@@ -594590,8 +594603,8 @@ gJG
 fjX
 fZJ
 fZJ
-fZJ
 ewi
+gJG
 gJG
 gJG
 gJG
@@ -595022,8 +595035,8 @@ gJG
 fjX
 fZJ
 fZJ
-fZJ
 ewi
+gJG
 gJG
 gJG
 gJG
@@ -595454,8 +595467,8 @@ gJG
 fjX
 fZJ
 fZJ
-fZJ
 ewi
+gJG
 gJG
 gJG
 gJG
@@ -595886,8 +595899,8 @@ paW
 fjX
 fZJ
 fZJ
-fZJ
 uXy
+pqO
 pqO
 pqO
 pqO
