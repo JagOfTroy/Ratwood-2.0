@@ -16,16 +16,16 @@
 		src.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		src.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		src.adjust_skillrank(/datum/skill/misc/swimming, 4, TRUE) //Bears are good swimmers
-		src.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		src.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 
-		src.STASTR = 14 //Might be too high, but then again you're a bear, and you gotta wrestle
-		src.STACON = 12 // One less than saiga
-		src.STAWIL = 12
-		src.STAPER = 10
-		src.STASPD = 6 // You are a hulking mass of muscle, and this is for balance reasons
+		src.STASTR = 15 //Might be too high, but then again you're a bear, and you gotta wrestle
+		src.STACON = 6 
+		src.STAWIL = 6
+		src.STAPER = 12
+		src.STASPD = 5 // You are a hulking mass of muscle, and this is for balance reasons
 
 		AddSpell(new /obj/effect/proc_holder/spell/self/bearclaws)
-		real_name = "Direbear ([stored_mob.real_name])" //So we don't get a random name
+		real_name = "Direbear" //So we don't get a random name
 		faction += "bears" // It IS a bear
 
 // BEAR SPECIES DATUM //
@@ -43,6 +43,9 @@
 		TRAIT_HARDDISMEMBER, //Decapping causes them to bug out, badly, and need admin intervention to fix. Bandaid fix.
 		TRAIT_PIERCEIMMUNE, //Prevents weapon dusting and caltrop effects due to them transforming when killed/stepping on shards.
 		TRAIT_LONGSTRIDER,
+		TRAIT_CRITICAL_RESISTANCE, // They have this due to low constitution. So they are not freakish tanky by default.
+		TRAIT_NOPAINSTUN,
+		TRAIT_CIVILIZEDBARBARIAN, //They can't punch, more like to kick people.
 	)
 	inherent_biotypes = MOB_HUMANOID
 	armor = 5
@@ -126,8 +129,7 @@
 	max_blade_int = 600
 	max_integrity = 600
 	force = 20
-	block_chance = 0
-	wdefense = 2
+	wdefense = 7
 	blade_dulling = DULLING_SHAFT_WOOD
 	associated_skill = /datum/skill/combat/unarmed
 	wlength = WLENGTH_NORMAL
@@ -137,7 +139,7 @@
 	sharpness = IS_SHARP
 	parrysound = "bladedmedium"
 	swingsound = list('sound/vo/mobs/direbear/direbear_attack1.ogg','sound/vo/mobs/direbear/direbear_attack2.ogg','sound/vo/mobs/direbear/direbear_attack3.ogg')
-	possible_item_intents = list(/datum/intent/simple/bear)
+	possible_item_intents = list(/datum/intent/simple/bear, /datum/intent/claw/lunge/iron, /datum/intent/claw/rend, /datum/intent/mace/smash)
 	parrysound = list('sound/combat/parry/parrygen.ogg')
 	embedding = list("embedded_pain_multiplier" = 0, "embed_chance" = 0, "embedded_fall_chance" = 0)
 	item_flags = DROPDEL
